@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隨機抽選助手 - 快速、公平、簡單</title>
+    <meta name="description" content="一個現代化的隨機抽選工具，支援多行文字輸入，一鍵隨機選出結果。適合活動抽獎、午餐決定或任何隨機決策。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <main class="container">
+        <header>
+            <h1>隨機抽選助手</h1>
+            <p class="subtitle">輸入您的選項，讓命運為您做決定</p>
+        </header>
+
+        <section class="card">
+            <div class="input-group">
+                <label for="items-input">請輸入待抽選項目（每行一個）：</label>
+                <textarea id="items-input" placeholder="例如：
+牛肉麵
+滷肉飯
+義大利麵
+火鍋"></textarea>
+            </div>
+
+            <div class="controls">
+                <button id="pick-btn" class="btn btn-primary">
+                    <span class="btn-text">立即隨機抽選</span>
+                </button>
+                <button id="clear-btn" class="btn btn-secondary">清空</button>
+            </div>
+        </section>
+
+        <section id="result-section" class="result-card hidden">
+            <div class="result-header">抽選結果</div>
+            <div id="result-display" class="result-text"></div>
+            <button id="retry-btn" class="btn btn-outline">再次抽選</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 隨機助手. Powered by Antigravity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

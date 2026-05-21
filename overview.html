@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Picker 使用說明</title>
+    <meta name="description" content="快速了解 Random Picker 隨機抽選工具的功能、使用方式與 LINE Bot 範例內容。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="guide-page">
+    <div class="background-glow"></div>
+
+    <main class="guide-shell">
+        <nav class="guide-nav" aria-label="頁面導覽">
+            <a class="brand-link" href="index.html">Random Picker</a>
+            <a class="nav-action" href="index.html">開始抽選</a>
+        </nav>
+
+        <header class="guide-hero">
+            <p class="eyebrow">專案快速說明</p>
+            <h1>一個簡單、快速的隨機抽選工具</h1>
+            <p class="guide-summary">
+                Random Picker 讓使用者輸入候選項目後，一鍵隨機選出結果。適合用在聚餐選擇、活動抽籤、任務分配、課堂點名與任何需要快速做決定的場景。
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="index.html">立即使用</a>
+                <a class="btn btn-outline" href="#features">了解功能</a>
+            </div>
+        </header>
+
+        <section id="features" class="guide-section">
+            <div class="section-heading">
+                <p class="eyebrow">核心功能</p>
+                <h2>使用者可以做什麼</h2>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h3>輸入候選清單</h3>
+                    <p>每行輸入一個項目，例如餐廳、名字、任務或活動選項。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h3>一鍵隨機抽選</h3>
+                    <p>按下抽選按鈕後，系統會從有效項目中隨機挑出一個結果。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>保留輸入內容</h3>
+                    <p>輸入內容會暫存在瀏覽器中，下次開啟頁面時可以繼續使用。</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">04</span>
+                    <h3>支援手機操作</h3>
+                    <p>頁面已針對小螢幕調整，手機也能快速輸入與抽選。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="guide-section split-section">
+            <div>
+                <p class="eyebrow">操作方式</p>
+                <h2>三步驟完成抽選</h2>
+            </div>
+
+            <ol class="step-list">
+                <li>
+                    <strong>輸入選項</strong>
+                    <span>在文字框中輸入候選項目，每個項目各佔一行。</span>
+                </li>
+                <li>
+                    <strong>按下抽選</strong>
+                    <span>系統會自動忽略空白行，並從剩餘項目中抽出結果。</span>
+                </li>
+                <li>
+                    <strong>查看結果</strong>
+                    <span>結果會顯示在畫面下方，也可以重新抽選或清除內容。</span>
+                </li>
+            </ol>
+        </section>
+
+        <section class="guide-section split-section">
+            <div>
+                <p class="eyebrow">延伸內容</p>
+                <h2>LINE Bot 範例</h2>
+            </div>
+
+            <div class="info-panel">
+                <p>
+                    專案內也附有 LINE Bot 範例程式，可讓使用者透過 LINE 訊息輸入候選清單並取得隨機結果。這部分適合開發者用來部署到 Google Apps Script，並串接 LINE Messaging API。
+                </p>
+                <ul class="compact-list">
+                    <li>支援 `/r` 與 `/random` 作為抽選指令。</li>
+                    <li>可從多行文字中抽出一個候選項目。</li>
+                    <li>另有 Google Spreadsheet 互動流程範例。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <div class="section-heading">
+                <p class="eyebrow">適用情境</p>
+                <h2>哪些時候可以使用</h2>
+            </div>
+
+            <div class="use-case-row">
+                <span>聚餐選餐廳</span>
+                <span>活動抽籤</span>
+                <span>任務分配</span>
+                <span>課堂點名</span>
+                <span>遊戲順序</span>
+            </div>
+        </section>
+
+        <footer class="guide-footer">
+            <p>Random Picker 是一個靜態網頁專案，可直接部署到 GitHub Pages 或其他靜態網站服務。</p>
+            <a href="index.html">回到抽選工具</a>
+        </footer>
+    </main>
+</body>
+
+</html>
